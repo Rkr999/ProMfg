@@ -29,11 +29,11 @@ export default MoreLines = ({ route }) => {
 
             <View style={styles.tiles}>
                 <View style={styles.tileContent}>
-                    <Text style={styles.tileHeader}>{'PAE'}</Text>
+                    <Text style={styles.tileHeader}>{route.params.listData.title}</Text>
                 </View>
                 <FlatList
                     key={'#'}
-                    data={route.params.listData}
+                    data={route.params.listData.list}
                     renderItem={renderItem}
                     keyExtractor={item => item.id}
                     horizontal={false}

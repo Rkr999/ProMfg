@@ -39,7 +39,7 @@ export default LineOptions = () => {
                                 <TouchableOpacity onPress={() =>
                                     navigation.navigate('MoreLines', {
                                         screenName: 'MoreLines',
-                                        listData: data.list
+                                        listData: data
                                     })
                                 }>
                                        <View style={[styles.tileBtn,{width:100,  justifyContent:'center', alignItems:'center'}]}>
