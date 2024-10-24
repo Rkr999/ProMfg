@@ -10,7 +10,7 @@ export default Header = ({ screenName }) => {
         <>
             <View style={styles.container}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', alignContent: 'space-between' }}>
-                    <View style={{ flex: 1, alignItems: 'flex-start', marginLeft: 10 }}>
+                    <View style={{ flex: 1, alignItems: 'flex-start', marginLeft: 5 }}>
 
                         <TouchableOpacity onPress={() =>
                             screenName == 'cards' ? navigation.goBack() : null
